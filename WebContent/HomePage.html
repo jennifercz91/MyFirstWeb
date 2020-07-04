@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+<form action = "HPServlet",method = "POST">
+<input hidden="hidden" type="text" name="opt" value="login" />
+UserName: <input type="text" name="name">
+<br />
+Password: <input type="text"name="password">
+<input type="submit" value="Login"/>
+</form>
+
+<script type="text/javascript">
+function openRegUrl() {
+var url = 'Register.html';
+//window.open(url); //新窗口打开
+window.location.href = url; //当前窗口打开
+}
+</script>
+<button type="button" onclick="openRegUrl();" > Register </button>
+
+<script type="text/javascript">
+function changePwUrl() {
+var url = 'ChangePw.html';
+//window.open(url); //新窗口打开
+window.location.href = url; //当前窗口打开
+}
+</script>
+<button type="button" onclick="openRegUrl();" > Change Password </button>
+
+
+</body>
+</html>
